@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nhb</groupId>
 	<artifactId>super-pom-template</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -46,12 +46,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
+			<id>${release.target}</id>
 			<name>Releases Repository</name>
 			<url>${RELEASES_URL}</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
+			<id>${snapshot.target}</id>
 			<name>Snapshots Repository</name>
 			<url>${SNAPSHOTS_URL}</url>
 		</snapshotRepository>

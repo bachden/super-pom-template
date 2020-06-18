@@ -359,7 +359,7 @@ java $JVM_OPTS -cp "$LOCAL_CLASSPATH" -Dworking.dir=$WORKING_DIR $MAIN_CLASS $@]
 				<groupId>com.lmax</groupId>
 				<artifactId>disruptor</artifactId>
 				<version>${disruptor.version}</version>
-				<scope>test</scope>
+				<scope>${log4j2.scope}</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
@@ -436,7 +436,7 @@ java $JVM_OPTS -cp "$LOCAL_CLASSPATH" -Dworking.dir=$WORKING_DIR $MAIN_CLASS $@]
 			</activation>
 
 			<properties>
-				<log4j2.scope>runtime</log4j2.scope>
+				<log4j2.scope>compile</log4j2.scope>
 			</properties>
 
 			<build>
